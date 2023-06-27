@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <>
@@ -21,14 +21,19 @@ export const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  mb-2 mb-lg-0 ml-auto">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <NavLink className="nav-link " aria-current="page" to="/">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/user">
+                <NavLink className="nav-link" to="/user">
                   User
-                </Link>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/create-user">
+                  Add User
+                </NavLink>
               </li>
             </ul>
           </div>
