@@ -19,7 +19,7 @@ export const Header = () => {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav  mb-2 mb-lg-0 ml-auto">
+            <ul className="navbar-nav  mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
                 <NavLink className="nav-link " aria-current="page" to="/">
                   Home
