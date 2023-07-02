@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-export const AddUser = () => {
+const AddUser = () => {
   const navigate = useNavigate();
   const [response, setResponse] = useState("");
   const [formValue, setFormValue] = useState({
@@ -159,3 +159,4 @@ export const AddUser = () => {
     </div>
   );
 };
+export default AddUser;
