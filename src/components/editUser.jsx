@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
-export const EditUser = () => {
+const EditUser = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [response, setResponse] = useState("");
@@ -173,3 +173,4 @@ export const EditUser = () => {
     </div>
   );
 };
+export default EditUser;
