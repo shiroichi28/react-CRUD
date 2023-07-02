@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const ListUser = () => {
+const ListUser = () => {
   const [userData, setUserData] = useState([]);
   const [message, setMessage] = useState("");
   const [empty, setEmpty] = useState(null);
@@ -106,3 +106,4 @@ export const ListUser = () => {
     </div>
   );
 };
+export default ListUser
